@@ -18,4 +18,8 @@ class Product extends Model
     {
         return $this->belongsTo('App\User');
     }
+
+    protected $casts = [
+        'date_available' => 'datetime',
+    ];
 }

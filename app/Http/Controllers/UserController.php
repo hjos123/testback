@@ -17,7 +17,7 @@ class UserController extends Controller
       if ( !empty($user->password) ) {
         if ( Hash::check($request->password, $user->password) )
         {
-            $token = $user->createToken('nkve6RBesQ1oNmCFh9zAxNYvOi8rEAgWX1eSzzVk')->accessToken;
+            $token = $user->createToken('FxunqUe5LHaB2vknEXqLdDNFbV5EiETpWRmbqqZ4')->accessToken;
             return response()->json(['token' => $token]);
         }
         else

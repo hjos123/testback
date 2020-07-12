@@ -19,7 +19,7 @@ class CreateProductsTable extends Migration
             $table->string("description");
             $table->string("category")->nullable();
             $table->string("quantity")->nullable()->default(1);
-            $table->dateTime("date_available");
+            $table->timestamp("date_available");
             $table->double("price")->nullable()->default(0);
             $table->unsignedBigInteger('user_id');
             $table->string("path")->nullable();
