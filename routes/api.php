@@ -25,6 +25,6 @@ Route::group(['middleware' => 'auth:api'], function(){
 	Route::get('products', 'ProductController@index');
 	Route::post('products/save', 'ProductController@save');
 	Route::post('products/uploadImage', 'ProductController@uploadImage');
-	Route::get('logout', 'UserController@logout');
-	
+	Route::post('logout', 'UserController@logout');
+
 });

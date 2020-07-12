@@ -10,10 +10,12 @@ class Product extends Model
         'name', 'description','category','quantity','date_available','price','user_id'
     ];
 
+    protected $hidden = [
+        'user_id'
+    ];
+
     public function user()
     {
         return $this->belongsTo('App\User');
     }
-
-    protected $casts = ['date_available' => 'date'];
 }
